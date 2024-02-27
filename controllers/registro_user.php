@@ -8,7 +8,8 @@ if (!empty($_POST["btnregistrar"])) {
         $dni = (int) $_POST["dni"];
         $date = $_POST["date"];
         $email = $_POST["email"];
-        $password = $_POST["password"];
+        $password = md5($_POST["password"]);
+    
 
         $sql = $conexion->query("insert into users (user_name, user_lastname, dni, user_date, email, password) values ('$nombre', '$lastname', $dni, '$date', '$email', '$password')");
 
