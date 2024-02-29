@@ -22,6 +22,7 @@
     include "controllers/delete_user.php";
     ?>
     <div class="container-fluid row">
+        <h1></h1>
         <form class="col-4 p-3" method="POST">
             <h3 class="text-center alert alert-secundary">Registro de personas</h3>
             <?php
